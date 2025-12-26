@@ -9,8 +9,10 @@ st.set_page_config(page_title="Fake Certificate Detector", layout="centered")
 def load_model():
     return tf.keras.models.load_model(
         "certificate_forgery_model.keras",
-        compile=False
+        compile=False,
+        safe_mode=False
     )
+
 
 model = load_model()
 CLASS_NAMES = ["clean", "fake_qr", "forged_seal", "tampered_grades"]
