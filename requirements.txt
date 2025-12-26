@@ -1,0 +1,9 @@
+streamlit==1.52.2
+tensorflow==2.20.0
+keras==3.13.0
+numpy
+pillow
+opencv-python-headless
+pytesseract
+qrcode
+pyzbar
